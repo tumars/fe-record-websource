@@ -1,0 +1,95 @@
+@import '../../styles/variable.less';
+
+
+.collectbtn {
+	position: fixed;
+	z-index: 10;
+	top: 120px;
+	right: 100px;
+	width: 100px;
+	border-radius: .3em;
+	background-color: @card-color;
+	box-shadow: 1px 1px 1px #000;
+	overflow: hidden;
+	display: block;
+	line-height: 2.5;
+	text-align: center;
+	cursor: pointer;
+
+	@media (max-width: 960px) {
+		display: none
+	}
+}
+.deploy {
+	box-shadow: none;
+}
+
+.collectbox {
+	z-index: 30;
+	position: fixed;
+	display: block;
+	top: 163px;
+	right: 100px;
+	width: 600px;
+	min-height: 200px;
+	box-sizing: border-box;
+	padding: 20px;
+	background-color: @card-color;
+	border-radius: .3em;
+	box-shadow: 1px 1px 1px #000,
+				-1px -1px 1px #000;
+	transition: 1s display;
+
+	li {
+		display: inline-block;
+		margin: 5px;
+		padding: 0 5px;
+		height: 40px;
+		line-height: 40px;
+		background-color: @navy;
+		border-radius: .3em;
+		box-shadow: 1px 1px 1px #898989;
+		transition: .5s box-shadow;
+		cursor: pointer;
+		&:hover {
+			background-color: @blue;
+			box-shadow: none
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+.clearbtn {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #898989;
+	font-size: 14px;
+	cursor: pointer;
+
+	&:hover {
+		color: @red
+	}
+}
+
+.emtip {
+	position: relative;
+	top: 50px;
+	color: #999;
+	font-size: 16px;
+	text-align: center;
+
+
+	strong{
+		padding: 0 8px;
+		line-height: 1;
+		color: #fff;
+		background-color: @red;
+		box-shadow: 1px 1px 1px #000;
+		text-shadow: 1px 1px 1px #898989;
+	}
+}

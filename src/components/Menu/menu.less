@@ -1,0 +1,37 @@
+@import '../../styles/variable.less';
+
+
+.menu {
+	position: fixed;
+	z-index: 30;
+	top: 120px;
+	left: 100px;
+	width: 100px;
+	background-color: @card-color;
+	overflow: hidden;
+	@media (max-width: 960px) {
+		display: none;
+	}
+	ul {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	li {
+		display: block;
+		box-sizing: border-box;
+		padding-left: 10px;
+		line-height: 2.5;
+		border-bottom: solid 1px #bdc3c7;
+		text-align: left;
+		cursor: pointer;
+		&:last-child{
+			border-bottom: none;
+		}
+
+		&:hover {
+			color: #fff;
+			background-color: @navy;
+		}
+	}
+}
