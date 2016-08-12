@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
 import Menu from './../components/Menu/Menu.js'
-import slimScroller from 'slimscroller/dist/slimScroller.full.min.js'
+import slimScroller from './slimScroller.full.min.js'
 
 
 const mapStateToProps = (state) => {

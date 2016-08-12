@@ -115,8 +115,8 @@ const NAV_DATA = [
 	{
 		title: 'GitHub',
 		list: [
-			{name: ' Git 教程-廖雪峰', url: 'http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)', intro: '全面易懂的Git教程'},
-			{name: ' Git 学习资料整理', url: 'https://github.com/xirong/my-git)', intro: '内容包括很多 Git 的相关资料，star 1200+'},
+			{name: ' Git 教程-廖雪峰', url: 'http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000', intro: '全面易懂的Git教程'},
+			{name: ' Git 学习资料整理', url: 'https://github.com/xirong/my-git', intro: '内容包括很多 Git 的相关资料，star 1200+'},
 			{name: ' Travis CI', url: 'https://travis-ci.org/', intro: '主流的持续集成工具'},
 			{name: ' Circle CI', url: 'https://circleci.com/', intro: '另一款主流的持续集成工具'},
 			{name: ' Coveralls', url: 'http://coveralls.io/', intro: '它可以帮你生成一个展示代码覆盖率的徽章'},

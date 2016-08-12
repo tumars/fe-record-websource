@@ -27,7 +27,7 @@ const Collect = ({ CollectData, isShow, onShowCollect, onHideCollect, onClearAll
     return (
         <div>
             <div className={css.collectbtn} onMouseEnter={()=> onShowCollect()}>我的收藏</div>
-            <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={1000} transitionEnterTimeout={300} transitionLeaveTimeout={300}>
+            <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={1000}>
                 {box}
             </ReactCSSTransitionGroup>
         </div>

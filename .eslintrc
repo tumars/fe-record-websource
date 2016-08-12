@@ -11,10 +11,11 @@
   },
   "parser": "babel-eslint",
   "rules": {
-    "quotes": [2, "single"],
+     no-empty: ["error", { "allowEmptyCatch": true }],
     "strict": [2, "never"],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "no-console": ["error", { allow: ["warn", "error", "log"] }]
   },
   "plugins": [
     "react"

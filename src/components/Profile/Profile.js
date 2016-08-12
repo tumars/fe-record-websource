@@ -61,10 +61,10 @@ class Profile extends Component {
 		<div className={css.bottom}>
 			<div className={css.Profilebtn} onClick={this.onShowProfile.bind(this)}>作者信息</div>
 			<a href="https://github.com/tumars/fe-record" className={css.git} target="_blank">访问 GitHub</a>
-			<ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={1000} transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
+			<ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={1000}>
 				{visible ? <div className={css.mask} onClick={this.onHideProfile.bind(this)}></div>: ''}
 			</ReactCSSTransitionGroup>
-			<ReactCSSTransitionGroup className={css.box} transitionName="flipX" transitionAppear={true} transitionAppearTimeout={1000} transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
+			<ReactCSSTransitionGroup className={css.box} transitionName="flipX" transitionAppear={true} transitionAppearTimeout={1000}>
 				{visible ? InnerContent : ''}
 			</ReactCSSTransitionGroup>
 		</div>
