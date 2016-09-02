@@ -13,12 +13,6 @@ module.exports = {
     devtool: false,
     entry: {
         bundle: './src/main.js'
-        // vendor: [
-        //     'react',
-        //     'react-dom',
-        //     'redux',
-        //     'react-redux'
-        // ]
     },
     output: {
         path: path.join(__dirname, '/dist/'),
@@ -79,7 +73,7 @@ module.exports = {
         }, {
             test: /\.less$/,
             exclude: [/node_modules/, path.resolve(__dirname, 'src/styles')],
-            loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!less!postcss')
+            loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss!less')
         }, {
             test: /\.css$/,
             exclude: [/node_modules/, path.resolve(__dirname, 'src/styles')],
@@ -87,7 +81,7 @@ module.exports = {
         },{
             test: [/\.less$/],
             include: path.resolve(__dirname, 'src/styles'),
-            loader: ExtractTextPlugin.extract('style', 'css!less!postcss')
+            loader: ExtractTextPlugin.extract('style', 'css!postcss!less')
         },{
             test: [/\.css$/],
             include: path.resolve(__dirname, 'src/styles'),
